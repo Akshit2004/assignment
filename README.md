@@ -8,6 +8,17 @@ An AI-powered web application that extracts structured data from recipe blog URL
 - **History View**: Stores all extracted recipes in a database for easy access.
 - **Premium UI**: Clean, modern interface with dark mode and responsive design.
 
+## Screenshots
+
+### Recipe Extraction (Tab 1)
+![Recipe Extraction Page](./screenshots/frontend.png)
+
+### History View (Tab 2)
+![History View](./screenshots/History_view.png)
+
+### Recipe Details Modal
+![Details Modal](./screenshots/Details_modal.png)
+
 ## Tech Stack
 - **Frontend**: React (Vite), Lucide Icons, Vanilla CSS
 - **Backend**: FastAPI (Python), BeautifulSoup4
