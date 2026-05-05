@@ -1,0 +1,14 @@
+.env
+__pycache__/
+venv/
+env/
+*.pyc
+*.pyo
+*.pyd
+node_modules/
+dist/
+build/
+.DS_Store
+/.vscode
+/*.sqlite3
+/.pytest_cache/

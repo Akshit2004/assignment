@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+beautifulsoup4
+requests
+sqlalchemy
+psycopg2-binary
+pydantic
+groq
+python-dotenv
+python-multipart
