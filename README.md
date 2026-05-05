@@ -63,7 +63,12 @@ After activating the virtual environment, upgrade pip and install backend depend
 2. Create a `.env` file in `backend/` (or set the env vars directly). Example contents:
    ```env
    GROQ_API_KEY=your_groq_api_key_here
-   DATABASE_URL=sqlite:///./recipes.db
+   POSTGRES_USER=username
+   POSTGRES_PASSWORD=your_password
+   POSTGRES_DB=recipes_db
+   POSTGRES_HOST=localhost
+   POSTGRES_PORT=5432
+   DATABASE_URL=postgresql://username:password@localhost:5432/recipes_db
    ```
 3. Install Python dependencies:
    ```bash
