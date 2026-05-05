@@ -105,14 +105,6 @@ Notes:
    ```
 4. Open the frontend in your browser (default Vite URL): `http://localhost:5173`
 
-### Quick run summary
-- Backend: activate `.venv`, `cd backend`, `uvicorn app.main:app --reload --port 8000`
-- Frontend: `cd frontend`, `npm install`, `npm run dev`
-
-### Troubleshooting
-- If you see import errors when running from repo root, either `cd backend` first or set `PYTHONPATH=backend` before running.
-- On PowerShell, if activation is blocked, run `Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned -Force` then re-run the activation command.
-- If ports conflict, change the `--port` value for uvicorn or the Vite dev server.
 
 ## API Endpoints
 - `POST /extract`: Accepts a JSON body with `url`. Returns extracted recipe data.
@@ -137,5 +129,3 @@ To test the extraction:
 1. Use the "Extract Recipe" tab.
 2. Paste a URL from `sample_data/tested_urls.txt`.
 3. Verify the structured output against the corresponding JSON in `sample_data/`.
-
-This project meets all requirements including structured extraction, nutritional estimation, substitution generation, and shopping list categorization.
