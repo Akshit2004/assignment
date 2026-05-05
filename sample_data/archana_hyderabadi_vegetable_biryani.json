@@ -1,0 +1,175 @@
+{
+  "title": "Hyderabadi Vegetable Biryani Recipe | Vegetable Dum Biryani",
+  "cuisine": "Hyderabadi",
+  "prep_time": "20 M",
+  "cook_time": "1h 0m",
+  "total_time": "1h 20min",
+  "servings": 4,
+  "difficulty": "Medium",
+  "ingredients": [
+    {
+      "quantity": "1/2",
+      "unit": "cup",
+      "item": "Green beans"
+    },
+    {
+      "quantity": "1/2",
+      "unit": "cup",
+      "item": "Carrots"
+    },
+    {
+      "quantity": "2",
+      "unit": "",
+      "item": "Potatoes"
+    },
+    {
+      "quantity": "6",
+      "unit": "",
+      "item": "Garlic"
+    },
+    {
+      "quantity": "2",
+      "unit": "inch",
+      "item": "Ginger"
+    },
+    {
+      "quantity": "2",
+      "unit": "",
+      "item": "Green Chillies"
+    },
+    {
+      "quantity": "3",
+      "unit": "tablespoons",
+      "item": "Oil"
+    },
+    {
+      "quantity": "3",
+      "unit": "",
+      "item": "Onions"
+    },
+    {
+      "quantity": "2",
+      "unit": "cups",
+      "item": "Seeraga Samba rice"
+    },
+    {
+      "quantity": "2",
+      "unit": "",
+      "item": "Tomatoes"
+    },
+    {
+      "quantity": "1/2",
+      "unit": "cup",
+      "item": "Curd"
+    },
+    {
+      "quantity": "1",
+      "unit": "inch",
+      "item": "Cinnamon Stick"
+    },
+    {
+      "quantity": "4",
+      "unit": "",
+      "item": "Cardamom Pods/Seeds"
+    },
+    {
+      "quantity": "2",
+      "unit": "",
+      "item": "Bay leaves"
+    },
+    {
+      "quantity": "1/2",
+      "unit": "teaspoon",
+      "item": "Turmeric powder"
+    },
+    {
+      "quantity": "1",
+      "unit": "teaspoon",
+      "item": "Red Chilli powder"
+    },
+    {
+      "quantity": "1",
+      "unit": "teaspoon",
+      "item": "Coriander Powder"
+    },
+    {
+      "quantity": "1/2",
+      "unit": "teaspoon",
+      "item": "Garam masala powder"
+    },
+    {
+      "quantity": "",
+      "unit": "",
+      "item": "Salt"
+    },
+    {
+      "quantity": "1/4",
+      "unit": "cup",
+      "item": "Mint Leaves"
+    },
+    {
+      "quantity": "12",
+      "unit": "",
+      "item": "Saffron strands"
+    },
+    {
+      "quantity": "1",
+      "unit": "cup",
+      "item": "Whole Wheat Flour"
+    }
+  ],
+  "instructions": [
+    "Prep all the ingredients and keep them ready",
+    "Prepare the dough for dum cooking",
+    "Cook the rice with 2 cups of water along with salt",
+    "Make a paste of the ginger garlic and green chillies",
+    "Add oil to a pan and preheat it over medium heat",
+    "Add onion, ginger garlic green chilli paste, cinnamon, cloves, bay leaf and cardamom",
+    "Add the finely chopped tomatoes and simmer",
+    "Add the yogurt, potatoes and the remaining vegetables and simmer",
+    "Add the mint leaves, potatoes, half cooked rice and any additional salt",
+    "Seal the pan with the dough for dum cooking",
+    "Cook the biryani for about 20 minutes",
+    "Allow the biryani to rest and then serve"
+  ],
+  "nutrition_estimate": {
+    "calories": 550,
+    "protein": "20g",
+    "carbs": "70g",
+    "fat": "15g"
+  },
+  "substitutions": [
+    "Use brown rice instead of Seeraga Samba rice",
+    "Replace potatoes with cauliflower",
+    "Use low-fat yogurt instead of regular yogurt"
+  ],
+  "shopping_list": {
+    "Produce": [
+      "Green beans",
+      "Carrots",
+      "Ginger",
+      "Garlic",
+      "Green Chillies",
+      "Tomatoes",
+      "Mint Leaves"
+    ],
+    "Pantry": [
+      "Seeraga Samba rice",
+      "Whole Wheat Flour"
+    ],
+    "Spices": [
+      "Turmeric powder",
+      "Red Chilli powder",
+      "Coriander Powder",
+      "Garam masala powder"
+    ],
+    "Dairy": [
+      "Curd"
+    ]
+  },
+  "related_recipes": [
+    "Chicken Dum Biryani",
+    "Soya Chunks And Beetroot Biryani",
+    "Paneer Malai Makhani Biryani"
+  ]
+}

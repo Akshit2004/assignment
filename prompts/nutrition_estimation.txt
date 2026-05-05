@@ -1,0 +1,13 @@
+You are an expert nutritionist. Based on the following recipe text, estimate the nutritional values per serving.
+If the information is not explicitly provided, use your knowledge of ingredients to provide a realistic estimate.
+
+Recipe Text:
+{recipe_text}
+
+Output ONLY a JSON object with these keys:
+{
+  "calories": 0,
+  "protein": "0g",
+  "carbs": "0g",
+  "fat": "0g"
+}

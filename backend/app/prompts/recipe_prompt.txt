@@ -4,7 +4,7 @@ Input Text:
 {scraped_text}
 
 Output JSON must strictly follow this structure (no extra keys):
-{
+{{
   "title": "Recipe Name",
   "cuisine": "Cuisine Type (e.g., Italian, American)",
   "prep_time": "e.g., 10 mins",
@@ -13,32 +13,32 @@ Output JSON must strictly follow this structure (no extra keys):
   "servings": 4,
   "difficulty": "Easy/Medium/Hard",
   "ingredients": [
-    { "quantity": "1", "unit": "cup", "item": "flour" }
+    {{ "quantity": "1", "unit": "cup", "item": "flour" }}
   ],
   "instructions": [
     "Step description",
     "Step description"
   ],
-  "nutrition_estimate": {
+  "nutrition_estimate": {{
     "calories": 250,
     "protein": "10g",
     "carbs": "30g",
     "fat": "8g"
-  },
+  }},
   "substitutions": [
     "Substitution 1",
     "Substitution 2",
     "Substitution 3"
   ],
-  "shopping_list": {
+  "shopping_list": {{
     "Produce": ["item1", "item2"]
-  },
+  }},
   "related_recipes": [
     "Recipe 1",
     "Recipe 2",
     "Recipe 3"
   ]
-}
+}}
 
 Rules:
 1. Output ONLY valid JSON. No markdown, no commentary, no trailing commas.

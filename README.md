@@ -16,37 +16,110 @@ An AI-powered web application that extracts structured data from recipe blog URL
 
 ## Setup Instructions
 
-### Backend
-1. Navigate to `backend/`
-2. Create a `.env` file:
+Follow these steps to create the Python virtual environment, install dependencies, and run both backend and frontend locally.
+
+Prerequisites: Python 3.10+, Node 16+/18+, npm, and `git` (optional).
+
+### Create & activate a Python virtual environment
+From the repository root (recommended):
+
+- Windows (PowerShell):
+  ```powershell
+  python -m venv .venv
+  Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned -Force
+  .\.venv\Scripts\Activate.ps1
+  ```
+
+- Windows (cmd.exe):
+  ```cmd
+  python -m venv .venv
+  .venv\Scripts\activate
+  ```
+
+- macOS / Linux:
+  ```bash
+  python3 -m venv .venv
+  source .venv/bin/activate
+  ```
+
+After activating the virtual environment, upgrade pip and install backend dependencies.
+
+### Backend (Python / FastAPI)
+1. Change to the `backend/` folder:
+   ```bash
+   cd backend
+   ```
+2. Create a `.env` file in `backend/` (or set the env vars directly). Example contents:
    ```env
    GROQ_API_KEY=your_groq_api_key_here
    DATABASE_URL=sqlite:///./recipes.db
    ```
-3. Install dependencies:
+3. Install Python dependencies:
    ```bash
+   pip install --upgrade pip
    pip install -r requirements.txt
    ```
-4. Run the server:
-   ```bash
-   python -m app.main
-   ```
+4. Run the backend API (choose one):
 
-### Frontend
-1. Navigate to `frontend/`
-2. Install dependencies:
+   - Run via Python module (uses the `if __name__ == "__main__"` uvicorn call):
+     ```bash
+     python -m app.main
+     ```
+
+   - Or run with uvicorn directly (recommended for development):
+     ```bash
+     uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+     ```
+
+Notes:
+- If you prefer starting from the repository root, ensure Python can import the `backend` package. From repo root you can run `PYTHONPATH=backend python -m app.main` (macOS/Linux) or `set PYTHONPATH=backend && python -m app.main` (Windows CMD / PowerShell variations).
+
+### Frontend (Vite / React)
+1. Open a new terminal, then change to the `frontend/` folder:
+   ```bash
+   cd frontend
+   ```
+2. Install Node dependencies:
    ```bash
    npm install
    ```
-3. Run the development server:
+3. Run the dev server:
    ```bash
    npm run dev
    ```
+4. Open the frontend in your browser (default Vite URL): `http://localhost:5173`
+
+### Quick run summary
+- Backend: activate `.venv`, `cd backend`, `uvicorn app.main:app --reload --port 8000`
+- Frontend: `cd frontend`, `npm install`, `npm run dev`
+
+### Troubleshooting
+- If you see import errors when running from repo root, either `cd backend` first or set `PYTHONPATH=backend` before running.
+- On PowerShell, if activation is blocked, run `Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned -Force` then re-run the activation command.
+- If ports conflict, change the `--port` value for uvicorn or the Vite dev server.
 
 ## API Endpoints
 - `POST /extract`: Accepts a JSON body with `url`. Returns extracted recipe data.
 - `GET /history`: Returns a list of all processed recipes.
 - `GET /recipes/{id}`: Returns full details for a specific recipe.
 
-## Evaluation
+## Project Structure
+- **backend/**: FastAPI application, SQLAlchemy models, and LLM service.
+- **frontend/**: React (Vite) application with premium styling.
+- **prompts/**: LangChain-style prompt templates for extraction, nutrition, and substitutions.
+- **sample_data/**: Example URLs and their corresponding JSON outputs for testing.
+- **screenshots/**: Visual proof of the application in action.
+
+## Prompts
+The `prompts/` directory contains the AI instructions used to power the extraction:
+- `recipe_extraction.txt`: The master prompt for structured data extraction.
+- `nutrition_estimation.txt`: Specialized prompt for calorie and macro estimation.
+- `substitution_generation.txt`: Prompt for smart ingredient swaps.
+
+## Evaluation & Testing
+To test the extraction:
+1. Use the "Extract Recipe" tab.
+2. Paste a URL from `sample_data/tested_urls.txt`.
+3. Verify the structured output against the corresponding JSON in `sample_data/`.
+
 This project meets all requirements including structured extraction, nutritional estimation, substitution generation, and shopping list categorization.
