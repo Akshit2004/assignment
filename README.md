@@ -17,7 +17,7 @@ An AI-powered web application that extracts structured data from recipe blog URL
 ![History View](./screenshots/History_view.png)
 
 ### Recipe Details Modal
-![Details Modal](./screenshots/Details_modal.png)
+![Details Modal](./screenshots/Detail_modal.png)
 
 ## Tech Stack
 - **Frontend**: React (Vite), Lucide Icons, Vanilla CSS
